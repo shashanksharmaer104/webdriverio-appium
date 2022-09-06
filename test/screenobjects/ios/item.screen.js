@@ -38,4 +38,4 @@ class ItemScreen {
 
 }
 
-module.exports = new ItemScreen();
+export default new ItemScreen();
