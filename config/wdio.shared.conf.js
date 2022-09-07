@@ -1,12 +1,4 @@
-const path = require('path');
-
 exports.config = {
-    //
-    // ====================
-    // Runner Configuration
-    // ====================
-    //
-    port: 4723,
     //
     // ==================
     // Specify Test Files
@@ -23,9 +15,6 @@ exports.config = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
-    specs: [
-        './test/**/ios-todo-item*.js'
-    ],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -51,23 +40,6 @@ exports.config = {
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
-    //
-    capabilities: [
-        /*{
-        platformName: 'Android',
-        "appium:platformVersion": "11",
-        "appium:deviceName": 'Pixel 3',
-        "appium:automationName": 'UIAutomator2',
-        "appium:app": path.join(process.cwd(),"./app/android/ColorNote+Notepad.apk"),
-        "appium:autoGrantPermissions": true
-        }*/
-        {
-            platformName: 'ios',
-            "appium:platformVersion": "14.5",
-            "appium:deviceName": 'Custom iPhone 12 Pro',
-            "appium:automationName": 'XCUITest',
-            "appium:app": path.join(process.cwd(),"./app/ios/MVCTodo.app")
-    }],
     //
     // ===================
     // Test Configurations
@@ -163,7 +135,7 @@ exports.config = {
      */
     // onPrepare: function (config, capabilities) {
     // },
-    /**
+    /**x`
      * Gets executed before a worker process is spawned and can be used to initialise specific service
      * for that worker as well as modify runtime environments in an async fashion.
      * @param  {String} cid      capability id (e.g 0-0)
